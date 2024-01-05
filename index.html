@@ -15,7 +15,11 @@
         .special-word{
             font-family: 'Cambria', serif;
         }
-            
+
+        .special-word2{
+            color:#909090;
+        }  
+        
         .button-container {
             display: flex;
             flex-direction: column;
@@ -53,16 +57,16 @@
 
     <div class="button-container">
         <button class="round-button" onclick="revealText('button1')">isotope framework</button>
-        <div id="button1Text" class="revealed-text-box">A conceptual framework representing linear trends in <span class="special-word">δ</span><sup>18</sup>O-<span class="special-word">δ</span><sup>2</sup>H of prevailing meterological conditions and indivudal water budget components (i.e.,<span class="special-word">δ</span><sub>SSL</sub>, <span class="special-word">δ</span><sup>*</sup>). An isotope framework is also necessary when estimating evaporation-to-inflow ratios using the dual-isotope tracer approach<sup>6,11</sup>. </div>
+        <div id="button1Text" class="revealed-text-box">A conceptual framework representing linear trends in <span class="special-word">δ</span><sup>18</sup>O-<span class="special-word">δ</span><sup>2</sup>H of prevailing meterological conditions and indivudal water budget components (i.e.,<span class="special-word">δ</span><sub>SSL</sub>, <span class="special-word">δ</span><sup>*</sup>). An isotope framework is also necessary when estimating evaporation-to-inflow ratios using the dual-isotope tracer approach<span class="special-word2"><sup>6,11</sup></span>. </div>
 
         <button class="round-button" onclick="revealText('button2')">local evaporation line (LEL)</button>
-        <div id="button2Text" class="revealed-text-box"> A linear trajectroy offset from the Local Meteoric Water Line and primarily controlled by local atmospheric conditions (relative humidity, temperature, and the isotope composition of atmospheric mositure). The position of a lake relative to the LEL provides information about the water balance of the lake<sup>6</sup>.</div>
+        <div id="button2Text" class="revealed-text-box"> A linear trajectroy offset from the Local Meteoric Water Line and primarily controlled by local atmospheric conditions (relative humidity, temperature, and the isotope composition of atmospheric mositure). The position of a lake relative to the LEL provides information about the water balance of the lake<span class="special-word2"><sup>6</sup></span>.</div>
 
         <button class="round-button" onclick="revealText('button3')"> <span class="special-word">δ</span><sub>SSL</sub></button>
-        <div id="button3Text" class="revealed-text-box">The isotope composition of a lake at steady-state (i.e., evaporation = inflow). <span class="special-word">δ</span><sub>SSL</sub> can be estimated using the equation of Gonfiantini (1986)<sup>12</sup>, which is based on the linear resistance model of Craig and Gordon (1965)<sup>13</sup>. Alternatively, an 'index lake', which is a naturally occuring terminal basin where evaporation = inflow, can be used to serve as <span class="special-word">δ</span><sub>SSL</sub><sup>14</sup>.</div>
+        <div id="button3Text" class="revealed-text-box">The isotope composition of a lake at steady-state (i.e., evaporation = inflow). <span class="special-word">δ</span><sub>SSL</sub> can be estimated using the equation of Gonfiantini (1986)<span class="special-word2"><sup>12</sup></span>, which is based on the linear resistance model of Craig and Gordon (1965)<span class="special-word2"><sup>13</sup></span>. Alternatively, an 'index lake', which is a naturally occuring terminal basin where evaporation = inflow, can be used to serve as <span class="special-word">δ</span><sub>SSL</sub><span class="special-word2"><sup>14</sup></span>.</div>
 
         <button class="round-button" onclick="revealText('button4')">	<span class="special-word">δ</span><sup>*</sup></button>
-        <div id="button4Text" class="revealed-text-box">The limiting non-steady state isotope composition of a lake approaching dessication. <span class="special-word">δ</span><sup>*</sup> is dependent on atmospheric conditions (relative humidity, temeperature, and the isotope composition of atmospheric vapour). Theoretically, the isotope composition of all lakes experiencing similar atmospheric conditions will converege towards this point<sup>6</sup>.
+        <div id="button4Text" class="revealed-text-box">The limiting non-steady state isotope composition of a lake approaching dessication. <span class="special-word">δ</span><sup>*</sup> is dependent on atmospheric conditions (relative humidity, temeperature, and the isotope composition of atmospheric vapour). Theoretically, the isotope composition of all lakes experiencing similar atmospheric conditions will converege towards this point<span class="special-word2"><sup>6</sup></span>.
     </div>
 
     <script>
