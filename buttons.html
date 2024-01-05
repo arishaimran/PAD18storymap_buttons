@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacked Buttons</title>
+    <style>
+        body {
+            font-family: 'Avenir', sans-serif;
+            text-align: left;
+            font-size: 18px;
+        }
+        
+        .special-word{
+            font-family: 'Cambria', serif;
+        }
+            
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .round-button {
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            background-color: #20A39E;
+            ;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .revealed-text-box {
+            display: none;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .revealed {
+            display: block!important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="button-container">
+        <button class="round-button" onclick="revealText('button1')">isotope framework</button>
+        <div id="button1Text" class="revealed-text-box">A conceptual framework representing linear trends in <span class="special-word">δ</span><sup>18</sup>O-<span class="special-word">δ</span><sup>2</sup>H of prevailing meterological conditions and indivudal water budget components (i.e.,<span class="special-word">δ</span><sub>SSL</sub>, <span class="special-word">δ</span><sup>*</sup>). An isotope framework is also necessary when estimating evaporation-to-inflow ratios using the dual-isotope tracer approach<sup>6,11</sup>. </div>
+
+        <button class="round-button" onclick="revealText('button2')">local evaporation line (LEL)</button>
+        <div id="button2Text" class="revealed-text-box"> A linear trajectroy offset from the Local Meteoric Water Line and primarily controlled by local atmospheric conditions (relative humidity, temperature, and the isotope composition of atmospheric mositure). The position of a lake relative to the LEL provides information about the water balance of the lake<sup>6</sup>.</div>
+
+        <button class="round-button" onclick="revealText('button3')"> <span class="special-word">δ</span><sub>SSL</sub></button>
+        <div id="button3Text" class="revealed-text-box">The isotope composition of a lake at steady-state (i.e., evaporation = inflow). <span class="special-word">δ</span><sub>SSL</sub> can be estimated using the equation of Gonfiantini (1986)<sup>12</sup>, which is based on the linear resistance model of Craig and Gordon (1965)<sup>13</sup>. Alternatively, an 'index lake', which is a naturally occuring terminal basin where evaporation = inflow, can be used to serve as <span class="special-word">δ</span><sub>SSL</sub><sup>14</sup>.</div>
+
+        <button class="round-button" onclick="revealText('button4')">	<span class="special-word">δ</span><sup>*</sup></button>
+        <div id="button4Text" class="revealed-text-box">The limiting non-steady state isotope composition of a lake approaching dessication. <span class="special-word">δ</span><sup>*</sup> is dependent on atmospheric conditions (relative humidity, temeperature, and the isotope composition of atmospheric vapour). Theoretically, the isotope composition of all lakes experiencing similar atmospheric conditions will converege towards this point<sup>6</sup>.
+    </div>
+
+    <script>
+        function revealText(buttonId) {
+            // Get the corresponding text box
+            var textboxId = buttonId + 'Text';
+            var textbox = document.getElementById(textboxId);
+
+            // Toggle the visibility of the text box
+            textbox.classList.toggle('revealed');
+        }
+    </script>
+
+</body>
+
+</html>
